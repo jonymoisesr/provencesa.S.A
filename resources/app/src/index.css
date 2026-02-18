@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Print Styles */
+@media print {
+  @page {
+    size: letter;
+    margin: 0;
+  }
+  
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    background: white;
+  }
+
+  /* Hide UI elements */
+  .no-print, 
+  aside, 
+  header, 
+  button, 
+  input[type="checkbox"] {
+    display: none !important;
+  }
+
+  /* Ensure container takes full width/height without shadows/margins */
+  .invoice-wrapper {
+    min-height: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    display: block !important;
+  }
+
+  /* Reset container widths */
+  .max-w-\[1000px\] {
+    max-width: none !important;
+    width: 100% !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* Ensure text is black for readability */
+  * {
+    color: black !important;
+  }
+  
+  /* Restore specific colors if needed */
+  .bg-blue-600, .bg-indigo-500, .bg-purple-500 {
+     /* Allow background colors */
+     color: white !important;
+  }
+  
+  /* Paper Structure */
+  .print\:p-0 {
+    padding: 0 !important;
+  }
+  
+  /* Avoid page breaks inside rows */
+  tr, td, th {
+    page-break-inside: avoid;
+  }
+  
+  /* Force single page if content permits */
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,167 @@
+
+> tauri-app@0.1.0 electron:build
+> npm run build && electron-builder
+
+
+> tauri-app@0.1.0 build
+> tsc && vite build
+
+▲ [WARNING] Duplicate key "target" in object literal [duplicate-object-key]
+
+    package.json:29:6:
+      29 │       "target": "nsis"
+         ╵       ~~~~~~~~
+
+  The original key "target" is here:
+
+    package.json:28:6:
+      28 │       "target": "nsis",
+         ╵       ~~~~~~~~
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 1775 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.49 kB[22m[1m[22m[2m │ gzip:  0.32 kB[22m
+[2mdist/[22m[35massets/index-DRfYi78b.css  [39m[1m[2m 43.82 kB[22m[1m[22m[2m │ gzip:  7.69 kB[22m
+[2mdist/[22m[36massets/index-BG5MGbYD.js   [39m[1m[2m294.65 kB[22m[1m[22m[2m │ gzip: 94.30 kB[22m
+[32m✓ built in 4.92s[39m
+  • electron-builder  version=26.7.0 os=10.0.26200
+  • loaded configuration  file=package.json ("build" field)
+  • executing @electron/rebuild  electronVersion=40.4.1 arch=x64 buildFromSource=false workspaceRoot=C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0 projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=40.4.1 appOutDir=dist_electron\win-unpacked
+  • searching for node modules  pm=npm searchDir=C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0
+(node:23216) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+  • searching for node modules  pm=traversal searchDir=C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0
+  • using manual traversal of node_modules to build dependency tree
+  • no node modules returned while searching directories  searchDirectories=[""]
+  • updating asar integrity executable resource  executablePath=dist_electron\win-unpacked\ProvencesaInvoiceSystem.exe
+  • default Electron icon is used  reason=application icon is not set
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=1.053s
+  ⨯ cannot execute  cause=exit status 2
+                    out=
+    7-Zip (a) 21.07 (x64) : Copyright (c) 1999-2021 Igor Pavlov : 2021-12-26
+    
+    Scanning the drive for archives:
+    1 file, 5635384 bytes (5504 KiB)
+    
+    Extracting archive: C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\908335731.7z
+    --
+    Path = C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\908335731.7z
+    Type = 7z
+    Physical Size = 5635384
+    Headers Size = 1492
+    Method = LZMA2:24m LZMA:20 BCJ2
+    Solid = +
+    Blocks = 2
+    
+    
+    Sub items Errors: 2
+    
+    Archives with Errors: 1
+    
+    Sub items Errors: 2
+    
+                    errorOut=ERROR: Cannot create symbolic link : El cliente no dispone de un privilegio requerido. : C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\908335731\darwin\10.12\lib\libcrypto.dylib
+    ERROR: Cannot create symbolic link : El cliente no dispone de un privilegio requerido. : C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\908335731\darwin\10.12\lib\libssl.dylib
+    
+                    command='C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\908335731.7z' '-oC:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\908335731'
+                    workingDir=C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=2.103s
+  ⨯ cannot execute  cause=exit status 2
+                    out=
+    7-Zip (a) 21.07 (x64) : Copyright (c) 1999-2021 Igor Pavlov : 2021-12-26
+    
+    Scanning the drive for archives:
+    1 file, 5635384 bytes (5504 KiB)
+    
+    Extracting archive: C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\150675863.7z
+    --
+    Path = C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\150675863.7z
+    Type = 7z
+    Physical Size = 5635384
+    Headers Size = 1492
+    Method = LZMA2:24m LZMA:20 BCJ2
+    Solid = +
+    Blocks = 2
+    
+    
+    Sub items Errors: 2
+    
+    Archives with Errors: 1
+    
+    Sub items Errors: 2
+    
+                    errorOut=ERROR: Cannot create symbolic link : El cliente no dispone de un privilegio requerido. : C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\150675863\darwin\10.12\lib\libcrypto.dylib
+    ERROR: Cannot create symbolic link : El cliente no dispone de un privilegio requerido. : C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\150675863\darwin\10.12\lib\libssl.dylib
+    
+                    command='C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\150675863.7z' '-oC:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\150675863'
+                    workingDir=C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=1.071s
+  ⨯ cannot execute  cause=exit status 2
+                    out=
+    7-Zip (a) 21.07 (x64) : Copyright (c) 1999-2021 Igor Pavlov : 2021-12-26
+    
+    Scanning the drive for archives:
+    1 file, 5635384 bytes (5504 KiB)
+    
+    Extracting archive: C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\472248559.7z
+    --
+    Path = C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\472248559.7z
+    Type = 7z
+    Physical Size = 5635384
+    Headers Size = 1492
+    Method = LZMA2:24m LZMA:20 BCJ2
+    Solid = +
+    Blocks = 2
+    
+    
+    Sub items Errors: 2
+    
+    Archives with Errors: 1
+    
+    Sub items Errors: 2
+    
+                    errorOut=ERROR: Cannot create symbolic link : El cliente no dispone de un privilegio requerido. : C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\472248559\darwin\10.12\lib\libcrypto.dylib
+    ERROR: Cannot create symbolic link : El cliente no dispone de un privilegio requerido. : C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\472248559\darwin\10.12\lib\libssl.dylib
+    
+                    command='C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\472248559.7z' '-oC:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\472248559'
+                    workingDir=C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=836ms
+  ⨯ cannot execute  cause=exit status 2
+                    out=
+    7-Zip (a) 21.07 (x64) : Copyright (c) 1999-2021 Igor Pavlov : 2021-12-26
+    
+    Scanning the drive for archives:
+    1 file, 5635384 bytes (5504 KiB)
+    
+    Extracting archive: C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\697515379.7z
+    --
+    Path = C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\697515379.7z
+    Type = 7z
+    Physical Size = 5635384
+    Headers Size = 1492
+    Method = LZMA2:24m LZMA:20 BCJ2
+    Solid = +
+    Blocks = 2
+    
+    
+    Sub items Errors: 2
+    
+    Archives with Errors: 1
+    
+    Sub items Errors: 2
+    
+                    errorOut=ERROR: Cannot create symbolic link : El cliente no dispone de un privilegio requerido. : C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\697515379\darwin\10.12\lib\libcrypto.dylib
+    ERROR: Cannot create symbolic link : El cliente no dispone de un privilegio requerido. : C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\697515379\darwin\10.12\lib\libssl.dylib
+    
+                    command='C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\697515379.7z' '-oC:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign\697515379'
+                    workingDir=C:\Users\Personal\AppData\Local\electron-builder\Cache\winCodeSign

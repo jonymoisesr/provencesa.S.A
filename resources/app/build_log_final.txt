@@ -1,0 +1,45 @@
+
+> tauri-app@0.1.0 electron:build
+> npm run build && electron-builder
+
+
+> tauri-app@0.1.0 build
+> tsc && vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 1789 modules transformed.
+[33m[plugin vite:reporter] 
+(!) C:/Users/Personal/Documents/deisibel-fundacion-provencesa/v1.0/node_modules/firebase/firestore/dist/esm/index.esm.js is dynamically imported by C:/Users/Personal/Documents/deisibel-fundacion-provencesa/v1.0/src/store/useInvoiceStore.ts but also statically imported by C:/Users/Personal/Documents/deisibel-fundacion-provencesa/v1.0/src/lib/firebase.ts, C:/Users/Personal/Documents/deisibel-fundacion-provencesa/v1.0/src/store/useInvoiceStore.ts, C:/Users/Personal/Documents/deisibel-fundacion-provencesa/v1.0/src/store/useSupplierStore.ts, dynamic import will not move module into another chunk.
+[39m
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.49 kB[22m[1m[22m[2m │ gzip:   0.31 kB[22m
+[2mdist/[22m[35massets/index-DRfYi78b.css  [39m[1m[2m 43.82 kB[22m[1m[22m[2m │ gzip:   7.69 kB[22m
+[2mdist/[22m[36massets/index-BF7nErlU.js   [39m[1m[33m680.13 kB[39m[22m[2m │ gzip: 212.71 kB[22m
+[33m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 6.35s[39m
+  • electron-builder  version=26.7.0 os=10.0.26200
+  • loaded configuration  file=package.json ("build" field)
+  • executing @electron/rebuild  electronVersion=40.4.1 arch=x64 buildFromSource=false workspaceRoot=C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0 projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=40.4.1 appOutDir=dist_electron\win-unpacked
+  • searching for node modules  pm=npm searchDir=C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0
+(node:4628) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+  ⨯ EBUSY: resource busy or locked, open 'C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\dist_electron\win-unpacked\ProvencesaInvoiceSystem.exe'  failedTask=build stackTrace=Error: EBUSY: resource busy or locked, open 'C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\dist_electron\win-unpacked\ProvencesaInvoiceSystem.exe'
+    at open (node:internal/fs/promises:637:25)
+    at writeFile (node:internal/fs/promises:1239:14)
+    at addWinAsarIntegrity (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\app-builder-lib\src\electron\electronWin.ts:40:3)
+    at beforeCopyExtraFiles (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\app-builder-lib\src\electron\ElectronFramework.ts:82:7)
+    at WinPackager.doPack (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\app-builder-lib\src\platformPackager.ts:324:7)
+    at WinPackager.pack (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\app-builder-lib\src\platformPackager.ts:161:5)
+    at Packager.doBuild (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\app-builder-lib\src\packager.ts:538:11)
+    at executeFinally (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\builder-util\src\promise.ts:12:14)
+    at Packager.build (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\app-builder-lib\src\packager.ts:458:31)
+    at executeFinally (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\builder-util\src\promise.ts:12:14)

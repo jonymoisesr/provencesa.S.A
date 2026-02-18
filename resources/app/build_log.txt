@@ -1,0 +1,67 @@
+
+> tauri-app@0.1.0 electron:build
+> npm run build && electron-builder
+
+
+> tauri-app@0.1.0 build
+> tsc && vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 1775 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.49 kB[22m[1m[22m[2m │ gzip:  0.32 kB[22m
+[2mdist/[22m[35massets/index-CAFQozMG.css  [39m[1m[2m 45.27 kB[22m[1m[22m[2m │ gzip:  7.87 kB[22m
+[2mdist/[22m[36massets/index-HcHJDSn8.js   [39m[1m[2m294.65 kB[22m[1m[22m[2m │ gzip: 94.30 kB[22m
+[32m✓ built in 5.22s[39m
+  • electron-builder  version=26.7.0 os=10.0.26200
+  • loaded configuration  file=package.json ("build" field)
+  • executing @electron/rebuild  electronVersion=40.4.1 arch=x64 buildFromSource=false workspaceRoot=C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0 projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=40.4.1 appOutDir=dist_electron\win-unpacked
+  • searching for node modules  pm=npm searchDir=C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0
+(node:23720) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+  • updating asar integrity executable resource  executablePath=dist_electron\win-unpacked\ProvencesaInvoiceSystem.exe
+  ⨯ open : The system cannot find the file specified.
+github.com/develar/app-builder/pkg/icons.LoadImage
+	/Users/runner/work/app-builder/app-builder/pkg/icons/image-util.go:27
+github.com/develar/app-builder/pkg/icons.loadImage
+	/Users/runner/work/app-builder/app-builder/pkg/icons/icon-converter.go:342
+github.com/develar/app-builder/pkg/icons.(*InputFileInfo).GetMaxImage
+	/Users/runner/work/app-builder/app-builder/pkg/icons/icons-api.go:51
+github.com/develar/app-builder/pkg/icons.convertSingleFile
+	/Users/runner/work/app-builder/app-builder/pkg/icons/icon-converter.go:301
+github.com/develar/app-builder/pkg/icons.doConvertIcon
+	/Users/runner/work/app-builder/app-builder/pkg/icons/icon-converter.go:255
+github.com/develar/app-builder/pkg/icons.ConvertIcon
+	/Users/runner/work/app-builder/app-builder/pkg/icons/icon-converter.go:56
+github.com/develar/app-builder/pkg/icons.ConfigureCommand.func1
+	/Users/runner/work/app-builder/app-builder/pkg/icons/icon-converter.go:33
+github.com/alecthomas/kingpin.(*actionMixin).applyActions
+	/Users/runner/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/actions.go:28
+github.com/alecthomas/kingpin.(*Application).applyActions
+	/Users/runner/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/app.go:557
+github.com/alecthomas/kingpin.(*Application).execute
+	/Users/runner/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/app.go:390
+github.com/alecthomas/kingpin.(*Application).Parse
+	/Users/runner/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/app.go:222
+main.main
+	/Users/runner/work/app-builder/app-builder/main.go:90
+runtime.main
+	/Users/runner/hostedtoolcache/go/1.21.13/arm64/src/runtime/proc.go:267
+runtime.goexit
+	/Users/runner/hostedtoolcache/go/1.21.13/arm64/src/runtime/asm_amd64.s:1650  
+  ⨯ C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\app-builder-bin\win\x64\app-builder.exe process failed ERR_ELECTRON_BUILDER_CANNOT_EXECUTE
+Exit code:
+1  failedTask=build stackTrace=Error: C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\app-builder-bin\win\x64\app-builder.exe process failed ERR_ELECTRON_BUILDER_CANNOT_EXECUTE
+Exit code:
+1
+    at ChildProcess.<anonymous> (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\builder-util\src\util.ts:272:14)
+    at Object.onceWrapper (node:events:623:26)
+    at ChildProcess.emit (node:events:508:28)
+    at ChildProcess.cp.emit (C:\Users\Personal\Documents\deisibel-fundacion-provencesa\v1.0\node_modules\cross-spawn\lib\enoent.js:34:29)
+    at maybeClose (node:internal/child_process:1101:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:305:5)

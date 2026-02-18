@@ -1,0 +1,10 @@
+
+> tauri-app@0.1.0 electron:build
+> npm run build && electron-builder
+
+
+> tauri-app@0.1.0 build
+> tsc && vite build
+
+src/store/useInvoiceStore.ts(6,3): error TS6133: 'addDoc' is declared but its value is never read.
+src/store/useInvoiceStore.ts(11,3): error TS6133: 'orderBy' is declared but its value is never read.
